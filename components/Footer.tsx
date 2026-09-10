@@ -6,18 +6,19 @@ const NAV_COLUMNS = [
   {
     title: "Agenzia",
     links: [
-      { label: "Chi siamo", href: "#chi-siamo" },
-      { label: "Come lavoriamo", href: "#metodo" },
-      { label: "Servizi", href: "#servizi" },
-      { label: "Numeri", href: "#numeri" },
+      { label: "Progetti", href: "/progetti" },
+      { label: "Chi siamo", href: "/#chi-siamo" },
+      { label: "Come lavoriamo", href: "/#metodo" },
+      { label: "Servizi", href: "/#servizi" },
+      { label: "Numeri", href: "/#numeri" },
     ],
   },
   {
     title: "Risorse",
     links: [
-      { label: "Aggiornamenti", href: "#aggiornamenti" },
-      { label: "FAQ", href: "#faq" },
-      { label: "Contatti", href: "#contatti" },
+      { label: "Aggiornamenti", href: "/#aggiornamenti" },
+      { label: "FAQ", href: "/#faq" },
+      { label: "Contatti", href: "/#contatti" },
     ],
   },
 ];
@@ -95,7 +96,7 @@ export function Footer() {
               ))}
             </ul>
             <a
-              href="#contatti"
+              href="/#contatti"
               className="mt-8 inline-flex items-center rounded-full border border-white/25 px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:border-white"
             >
               Richiedi una consulenza

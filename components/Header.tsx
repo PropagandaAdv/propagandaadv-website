@@ -7,12 +7,13 @@ import { Logo } from "@/components/Logo";
 import { IconMenu, IconClose } from "@/components/icons";
 
 const NAV_ITEMS = [
-  { href: "#chi-siamo", label: "Chi siamo" },
-  { href: "#metodo", label: "Metodo" },
-  { href: "#servizi", label: "Servizi" },
-  { href: "#numeri", label: "Numeri" },
-  { href: "#aggiornamenti", label: "Aggiornamenti" },
-  { href: "#faq", label: "FAQ" },
+  { href: "/progetti", label: "Progetti" },
+  { href: "/#chi-siamo", label: "Chi siamo" },
+  { href: "/#metodo", label: "Metodo" },
+  { href: "/#servizi", label: "Servizi" },
+  { href: "/#numeri", label: "Numeri" },
+  { href: "/#aggiornamenti", label: "Aggiornamenti" },
+  { href: "/#faq", label: "FAQ" },
 ];
 
 export function Header() {
@@ -34,7 +35,7 @@ export function Header() {
     >
       <Container>
         <div className="flex h-[72px] items-center justify-between">
-          <a href="#main" aria-label="Propaganda Adv — Home" className="relative z-10">
+          <a href="/" aria-label="Propaganda Adv — Home" className="relative z-10">
             <Logo variant="blue" />
           </a>
 
@@ -52,7 +53,7 @@ export function Header() {
 
           <div className="hidden lg:block">
             <a
-              href="#contatti"
+              href="/#contatti"
               className="inline-flex items-center rounded-full bg-ink px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-brand"
             >
               Richiedi una consulenza
@@ -92,7 +93,7 @@ export function Header() {
                 </a>
               ))}
               <a
-                href="#contatti"
+                href="/#contatti"
                 onClick={() => setOpen(false)}
                 className="mt-2 inline-flex items-center justify-center rounded-full bg-ink px-5 py-3 text-sm font-semibold text-white"
               >
