@@ -1,7 +1,7 @@
 import { Container } from "@/components/ui/Container";
 import { Reveal } from "@/components/ui/Reveal";
 import { ProjectCard } from "@/components/ProjectCard";
-import { ProjectsReel } from "@/components/ProjectsReel";
+import { ProjectsShowreel } from "@/components/ProjectsShowreel";
 import { FEATURED_PROJECTS, chunkIntoRows } from "@/lib/projects";
 import { IconArrowUpRight } from "@/components/icons";
 
@@ -10,7 +10,7 @@ export function Progetti() {
 
   return (
     <section id="progetti" className="bg-paper-warm pb-24 pt-0 lg:pb-32">
-      <ProjectsReel />
+      <ProjectsShowreel />
 
       <Container className="pt-16 lg:pt-20">
         <div className="flex flex-wrap items-end justify-between gap-6">

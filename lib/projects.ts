@@ -1,3 +1,5 @@
+export type PlaceholderVariant = "grid" | "arrow" | "shatter";
+
 export type Project = {
   slug: string;
   name: string;
@@ -5,9 +7,12 @@ export type Project = {
   sector: string;
   service: string;
   featured: boolean;
+  placeholder: PlaceholderVariant;
 };
 
-export const PROJECTS: Project[] = [
+const VARIANTS: PlaceholderVariant[] = ["grid", "arrow", "shatter"];
+
+const RAW_PROJECTS: Omit<Project, "placeholder">[] = [
   {
     slug: "centro-medico-reggiolo",
     name: "Centro Medico Reggiolo",
@@ -98,6 +103,14 @@ export const PROJECTS: Project[] = [
   },
 ];
 
+// Assigning placeholder variants by index keeps the rotation deterministic
+// and guarantees no two adjacent cards (in either the 6-featured or the
+// full 11-project order) share the same variant.
+export const PROJECTS: Project[] = RAW_PROJECTS.map((p, i) => ({
+  ...p,
+  placeholder: VARIANTS[i % VARIANTS.length],
+}));
+
 export const FEATURED_PROJECTS = PROJECTS.filter((p) => p.featured);
 
 /**
@@ -118,3 +131,87 @@ export function chunkIntoRows(projects: Project[]): Project[][] {
   }
   return rows;
 }
+
+export type ShowreelCrop = {
+  src: string;
+  alt: string;
+  projectName: string;
+};
+
+// Curated crops for the "Progetti & Clienti" showreel — 1-2 hand-picked
+// sections per client site (not full-page scroll captures). Order is
+// deliberately interleaved so the two projects with two crops each don't
+// play back-to-back.
+export const SHOWREEL_CROPS: ShowreelCrop[] = [
+  {
+    src: "/projects/centro-medico-reggiolo.jpg",
+    alt: "Sezione hero del sito di Centro Medico Reggiolo",
+    projectName: "Centro Medico Reggiolo",
+  },
+  {
+    src: "/projects/agripm.jpg",
+    alt: "Sezione hero del sito di AgriPM",
+    projectName: "AgriPM",
+  },
+  {
+    src: "/projects/piccola-osteria-andes.jpg",
+    alt: "Sezione hero del sito di Piccola Osteria Andes",
+    projectName: "Piccola Osteria Andes",
+  },
+  {
+    src: "/projects/mantua-gin-experience.jpg",
+    alt: "Sezione hero del sito di Mantua Gin Experience",
+    projectName: "Mantua Gin Experience",
+  },
+  {
+    src: "/projects/studio-elle.jpg",
+    alt: "Sezione hero del sito di Studio Elle",
+    projectName: "Studio Elle",
+  },
+  {
+    src: "/projects/baschieri.jpg",
+    alt: "Sezione hero del sito di Baschieri",
+    projectName: "Baschieri",
+  },
+  {
+    src: "/projects/magface.jpg",
+    alt: "Sezione hero del sito di MagFace",
+    projectName: "MagFace",
+  },
+  {
+    src: "/projects/crops/agripm-2.jpg",
+    alt: "Dettaglio prodotto dal sito di AgriPM",
+    projectName: "AgriPM",
+  },
+  {
+    src: "/projects/biochem-solution.jpg",
+    alt: "Sezione hero del sito di Biochem Solution",
+    projectName: "Biochem Solution",
+  },
+  {
+    src: "/projects/implementa-group.jpg",
+    alt: "Sezione hero del sito di Implementa Group",
+    projectName: "Implementa Group",
+  },
+  {
+    src: "/projects/crops/mantua-gin-experience-2.jpg",
+    alt: "Dettaglio prodotto dal sito di Mantua Gin Experience",
+    projectName: "Mantua Gin Experience",
+  },
+  {
+    src: "/projects/reggiolo-factory.jpg",
+    alt: "Sezione hero del sito di Reggiolo Factory",
+    projectName: "Reggiolo Factory",
+  },
+  {
+    src: "/projects/come-una-volta.jpg",
+    alt: "Sezione hero del sito di Come Una Volta",
+    projectName: "Come Una Volta",
+  },
+];
+
+export const PLACEHOLDER_IMAGE: Record<PlaceholderVariant, string> = {
+  grid: "/generated/placeholder-grid.jpg",
+  arrow: "/generated/placeholder-arrow.jpg",
+  shatter: "/generated/placeholder-shatter.jpg",
+};
