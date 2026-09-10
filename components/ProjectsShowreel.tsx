@@ -14,6 +14,10 @@ export function ProjectsShowreel() {
   useEffect(() => {
     if (reduceMotion) return;
     const id = setInterval(() => {
+      // Skip ticks while the tab is backgrounded: requestAnimationFrame-driven
+      // exit transitions don't run then, so letting the index keep advancing
+      // would pile up un-removed slides in the DOM until the tab is refocused.
+      if (document.hidden) return;
       setIndex((i) => (i + 1) % SHOWREEL_CROPS.length);
     }, HOLD_MS);
     return () => clearInterval(id);
@@ -33,7 +37,7 @@ export function ProjectsShowreel() {
           className="object-cover"
         />
       ) : (
-        <AnimatePresence>
+        <AnimatePresence mode="wait">
           <motion.div
             key={crop.src}
             initial={{ x: -60, opacity: 0 }}
