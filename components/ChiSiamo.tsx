@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { Container } from "@/components/ui/Container";
 import { Reveal } from "@/components/ui/Reveal";
-import { IconCheck } from "@/components/icons";
+import { IconCheck, IconArrowUpRight } from "@/components/icons";
 
 const PILLARS = [
   {
@@ -52,6 +52,16 @@ export function ChiSiamo() {
                 </Reveal>
               ))}
             </div>
+
+            <Reveal delay={0.25}>
+              <a
+                href="/chi-siamo"
+                className="group mt-10 inline-flex items-center gap-2 text-base font-semibold text-ink transition-colors hover:text-brand"
+              >
+                Scopri la nostra storia
+                <IconArrowUpRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+              </a>
+            </Reveal>
           </div>
 
           <Reveal delay={0.2} className="lg:col-span-5">

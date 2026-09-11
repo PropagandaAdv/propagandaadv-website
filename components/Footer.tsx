@@ -7,7 +7,7 @@ const NAV_COLUMNS = [
     title: "Agenzia",
     links: [
       { label: "Progetti", href: "/progetti" },
-      { label: "Chi siamo", href: "/#chi-siamo" },
+      { label: "Chi siamo", href: "/chi-siamo" },
       { label: "Come lavoriamo", href: "/#metodo" },
       { label: "Servizi", href: "/#servizi" },
       { label: "Numeri", href: "/#numeri" },

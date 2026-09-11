@@ -8,7 +8,7 @@ import { IconMenu, IconClose } from "@/components/icons";
 
 const NAV_ITEMS = [
   { href: "/progetti", label: "Progetti" },
-  { href: "/#chi-siamo", label: "Chi siamo" },
+  { href: "/chi-siamo", label: "Chi siamo" },
   { href: "/#metodo", label: "Metodo" },
   { href: "/#servizi", label: "Servizi" },
   { href: "/#numeri", label: "Numeri" },
