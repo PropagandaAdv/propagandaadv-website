@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { Container } from "@/components/ui/Container";
 import { Reveal } from "@/components/ui/Reveal";
+import { IconArrowUpRight } from "@/components/icons";
 
 const PHASES = [
   {
@@ -23,14 +24,6 @@ const PHASES = [
     title: "Sviluppo e pubblicazione",
     body: "Trasformiamo il progetto in realtà e lo pubblichiamo sul web, garantendo prestazioni, sicurezza e scalabilità.",
   },
-];
-
-const TIMELINE = [
-  { range: "Giorno 0", title: "Kickoff meeting", body: "Definiamo obiettivi, canali di comunicazione e modalità di lavoro condivise." },
-  { range: "Giorni 1–10", title: "Analisi e strategia", body: "Analisi di mercato, studio dei comportamenti utente e costruzione di una strategia digitale solida e misurabile." },
-  { range: "Giorni 11–25", title: "Design e sviluppo", body: "Il team UX/UI lavora su prototipi e interfacce, mentre lo sviluppo si occupa della messa in opera tecnica e delle integrazioni." },
-  { range: "Giorni 26–30", title: "Test, go-live, formazione", body: "Testiamo ogni funzionalità nel dettaglio, pubblichiamo il progetto e formiamo il cliente alla gestione autonoma." },
-  { range: "Post-lancio", title: "Ottimizzazione & supporto", body: "Monitoriamo i KPI, correggiamo le criticità e implementiamo miglioramenti continui per stabilità e prestazioni." },
 ];
 
 export function Metodo() {
@@ -82,20 +75,14 @@ export function Metodo() {
           </div>
         </div>
 
-        <Reveal delay={0.2} className="mt-20">
-          <div className="hairline mb-10 h-px w-full opacity-20" />
-          <p className="mb-8 text-sm font-semibold uppercase tracking-[0.18em] text-brand-light">
-            Percorso progettuale — 30 giorni al go-live
-          </p>
-          <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-5 lg:gap-6">
-            {TIMELINE.map((step) => (
-              <div key={step.range} className="border-t border-line-dark pt-5">
-                <p className="text-sm font-semibold text-brand-light">{step.range}</p>
-                <h4 className="mt-2 font-display text-base font-semibold">{step.title}</h4>
-                <p className="mt-2 text-sm leading-relaxed text-white/60">{step.body}</p>
-              </div>
-            ))}
-          </div>
+        <Reveal delay={0.2} className="mt-16 flex justify-center">
+          <a
+            href="/metodo"
+            className="group inline-flex items-center gap-2 rounded-full border border-white/20 px-7 py-4 text-base font-semibold text-white transition-colors hover:border-white"
+          >
+            Scopri il metodo completo
+            <IconArrowUpRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+          </a>
         </Reveal>
       </Container>
     </section>

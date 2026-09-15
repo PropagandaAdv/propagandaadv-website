@@ -8,7 +8,7 @@ const NAV_COLUMNS = [
     links: [
       { label: "Progetti", href: "/progetti" },
       { label: "Chi siamo", href: "/chi-siamo" },
-      { label: "Come lavoriamo", href: "/#metodo" },
+      { label: "Come lavoriamo", href: "/metodo" },
       { label: "Servizi", href: "/#servizi" },
       { label: "Numeri", href: "/#numeri" },
     ],
