@@ -215,3 +215,14 @@ export const PLACEHOLDER_IMAGE: Record<PlaceholderVariant, string> = {
   arrow: "/generated/placeholder-arrow.jpg",
   shatter: "/generated/placeholder-shatter.jpg",
 };
+
+// Wide (2:1) re-renders of the same three variants, for full-bleed
+// single-column layouts (the /progetti page) where the small square-ish
+// PLACEHOLDER_IMAGE crops would be cropped awkwardly.
+export const PLACEHOLDER_IMAGE_WIDE: Record<PlaceholderVariant, string> = {
+  grid: "/generated/placeholder-grid-wide.jpg",
+  arrow: "/generated/placeholder-arrow-wide.jpg",
+  shatter: "/generated/placeholder-shatter-wide.jpg",
+};
+
+export const SERVICE_TYPES: string[] = Array.from(new Set(PROJECTS.map((p) => p.service)));
