@@ -12,7 +12,7 @@ const NAV_ITEMS = [
   { href: "/metodo", label: "Metodo" },
   { href: "/#servizi", label: "Servizi" },
   { href: "/#numeri", label: "Numeri" },
-  { href: "/#aggiornamenti", label: "Aggiornamenti" },
+  { href: "/aggiornamenti", label: "Aggiornamenti" },
   { href: "/#faq", label: "FAQ" },
 ];
 

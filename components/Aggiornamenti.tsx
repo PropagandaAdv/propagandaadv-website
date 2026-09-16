@@ -1,30 +1,8 @@
 import Image from "next/image";
 import { Container } from "@/components/ui/Container";
 import { Reveal } from "@/components/ui/Reveal";
-
-const POSTS = [
-  {
-    tag: "SEO",
-    date: "Set 2026",
-    title: "SEO per PMI: le leve che contano davvero nel 2026",
-    excerpt: "Perché il posizionamento organico resta l'investimento più duraturo per un'azienda italiana, e da dove iniziare senza disperdere budget.",
-    image: "/generated/news-seo.jpg",
-  },
-  {
-    tag: "Metodo",
-    date: "Ago 2026",
-    title: "Come portiamo un progetto dal kickoff al go-live in 30 giorni",
-    excerpt: "Uno sguardo dentro il nostro metodo in quattro fasi: cosa succede davvero tra la prima consulenza e la pubblicazione del sito.",
-    image: "/generated/news-lancio.jpg",
-  },
-  {
-    tag: "Advertising",
-    date: "Ago 2026",
-    title: "Advertising data-driven: smettere di sparare nel mucchio",
-    excerpt: "Come costruiamo campagne Google e Meta Ads partendo dagli obiettivi reali dell'azienda invece che da budget genericamente allocati.",
-    image: "/generated/news-advertising.jpg",
-  },
-];
+import { POSTS } from "@/lib/posts";
+import { IconArrowUpRight } from "@/components/icons";
 
 export function Aggiornamenti() {
   return (
@@ -50,7 +28,7 @@ export function Aggiornamenti() {
 
         <div className="mt-14 grid grid-cols-1 gap-6 md:grid-cols-3">
           {POSTS.map((post, i) => (
-            <Reveal key={post.title} delay={0.1 + i * 0.08}>
+            <Reveal key={post.slug} delay={0.1 + i * 0.08}>
               <article className="group h-full overflow-hidden rounded-2xl border border-line bg-paper transition-shadow hover:shadow-[0_20px_50px_-25px_rgba(0,0,0,0.2)]">
                 <div className="relative aspect-[4/3] w-full overflow-hidden">
                   <Image
@@ -61,7 +39,7 @@ export function Aggiornamenti() {
                     className="object-cover transition-transform duration-500 group-hover:scale-105"
                   />
                   <span className="absolute left-4 top-4 rounded-full bg-paper/95 px-3 py-1 text-xs font-semibold text-ink">
-                    {post.tag}
+                    {post.category}
                   </span>
                 </div>
                 <div className="p-6">
@@ -73,6 +51,16 @@ export function Aggiornamenti() {
             </Reveal>
           ))}
         </div>
+
+        <Reveal delay={0.2} className="mt-14 flex justify-center">
+          <a
+            href="/aggiornamenti"
+            className="group inline-flex items-center gap-2 rounded-full border border-ink/15 px-7 py-4 text-base font-semibold text-ink transition-colors hover:border-ink"
+          >
+            Vedi tutti gli aggiornamenti
+            <IconArrowUpRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+          </a>
+        </Reveal>
       </Container>
     </section>
   );

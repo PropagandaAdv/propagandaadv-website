@@ -16,7 +16,7 @@ const NAV_COLUMNS = [
   {
     title: "Risorse",
     links: [
-      { label: "Aggiornamenti", href: "/#aggiornamenti" },
+      { label: "Aggiornamenti", href: "/aggiornamenti" },
       { label: "FAQ", href: "/#faq" },
       { label: "Contatti", href: "/#contatti" },
     ],
