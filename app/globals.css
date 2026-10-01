@@ -69,39 +69,44 @@ body {
 
 /* Soft glow on key accent text (brand-blue headline words, stat numbers on
    dark sections) — one glow treatment reused everywhere instead of a
-   different effect per section. */
+   different effect per section. Double-layered: a tight bright core plus a
+   wide soft bloom, so it reads clearly even against a busy video frame. */
 .text-glow {
-  text-shadow: 0 0 28px rgba(35, 61, 255, 0.45);
+  text-shadow:
+    0 0 10px rgba(85, 104, 255, 0.85),
+    0 0 26px rgba(85, 104, 255, 0.65),
+    0 0 60px rgba(35, 61, 255, 0.5);
 }
 
 /* Whisper-level drifting light particles, see components/ui/AmbientParticles.tsx */
 @keyframes drift-glow {
   0% {
-    transform: translate3d(0, 6px, 0);
+    transform: translate3d(0, 10px, 0) scale(0.6);
     opacity: 0;
   }
   15% {
-    opacity: var(--particle-opacity, 0.5);
+    opacity: var(--particle-opacity, 0.85);
+    transform: translate3d(0, 4px, 0) scale(1);
   }
   50% {
-    transform: translate3d(0, -14px, 0);
-    opacity: var(--particle-opacity, 0.5);
+    transform: translate3d(0, -22px, 0) scale(1.15);
+    opacity: var(--particle-opacity, 0.85);
   }
   85% {
-    opacity: var(--particle-opacity, 0.5);
+    opacity: var(--particle-opacity, 0.85);
   }
   100% {
-    transform: translate3d(0, 6px, 0);
+    transform: translate3d(0, 10px, 0) scale(0.6);
     opacity: 0;
   }
 }
 
 .ambient-particle {
   position: absolute;
-  --particle-opacity: 0.55;
+  --particle-opacity: 0.85;
   border-radius: 9999px;
-  background: #5568FF;
-  box-shadow: 0 0 6px 1px rgba(85, 104, 255, 0.6);
+  background: #7C8CFF;
+  box-shadow: 0 0 16px 4px rgba(124, 140, 255, 0.85);
   animation-name: drift-glow;
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
@@ -109,7 +114,7 @@ body {
 
 .ambient-particle-white {
   background: #ffffff;
-  box-shadow: 0 0 6px 1px rgba(255, 255, 255, 0.7);
+  box-shadow: 0 0 16px 4px rgba(255, 255, 255, 0.9);
 }
 
 @media (prefers-reduced-motion: reduce) {
