@@ -2,6 +2,7 @@ import Image from "next/image";
 import { Container } from "@/components/ui/Container";
 import { Reveal } from "@/components/ui/Reveal";
 import { Counter } from "@/components/ui/Counter";
+import { AmbientParticles } from "@/components/ui/AmbientParticles";
 
 const STATS = [
   { static: "Dal 2020", label: "aiutiamo le aziende a crescere" },
@@ -31,6 +32,7 @@ export function Numeri() {
         />
         <div className="absolute inset-0 bg-gradient-to-b from-ink via-ink/70 to-ink" />
       </div>
+      <AmbientParticles />
 
       <Container className="relative">
         <Reveal>
@@ -47,7 +49,7 @@ export function Numeri() {
             <Reveal key={stat.label} delay={0.1 + i * 0.1}>
               <div className="border-t border-line-dark pt-6">
                 {"static" in stat ? (
-                  <span className="numeral font-display text-5xl font-bold text-white sm:text-6xl">
+                  <span className="numeral font-display text-5xl font-bold text-white text-glow sm:text-6xl">
                     {stat.static}
                   </span>
                 ) : (
@@ -55,7 +57,7 @@ export function Numeri() {
                     to={stat.to}
                     prefix={stat.prefix}
                     suffix={stat.suffix}
-                    className="numeral font-display text-5xl font-bold text-white sm:text-6xl"
+                    className="numeral font-display text-5xl font-bold text-white text-glow sm:text-6xl"
                   />
                 )}
                 <p className="mt-3 text-base text-white/65">{stat.label}</p>

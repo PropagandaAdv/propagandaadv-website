@@ -3,6 +3,7 @@
 import { useState, type FormEvent } from "react";
 import { Container } from "@/components/ui/Container";
 import { Reveal } from "@/components/ui/Reveal";
+import { AmbientParticles } from "@/components/ui/AmbientParticles";
 import { IconMail, IconArrowUpRight } from "@/components/icons";
 
 const CONTACT_EMAIL = "commerciale@propagandaadv.com";
@@ -31,6 +32,7 @@ export function Contatti() {
   return (
     <section id="contatti" className="relative overflow-hidden bg-brand py-24 text-white lg:py-32">
       <div className="pointer-events-none absolute -right-32 -bottom-32 h-[420px] w-[420px] rounded-full bg-white/10" aria-hidden="true" />
+      <AmbientParticles variant="white" />
       <Container className="relative">
         <div className="grid grid-cols-1 gap-16 lg:grid-cols-12">
           <div className="lg:col-span-5">

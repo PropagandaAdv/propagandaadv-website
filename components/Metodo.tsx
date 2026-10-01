@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { Container } from "@/components/ui/Container";
 import { Reveal } from "@/components/ui/Reveal";
+import { AmbientParticles } from "@/components/ui/AmbientParticles";
 import { IconArrowUpRight } from "@/components/icons";
 
 const PHASES = [
@@ -30,6 +31,7 @@ export function Metodo() {
   return (
     <section id="metodo" className="relative overflow-hidden bg-ink py-24 text-white lg:py-32">
       <div className="pointer-events-none absolute inset-0 grid-dots opacity-30" aria-hidden="true" />
+      <AmbientParticles />
       <Container className="relative">
         <div className="grid grid-cols-1 gap-16 lg:grid-cols-12 lg:items-center">
           <div className="lg:col-span-5">
@@ -65,7 +67,7 @@ export function Metodo() {
               {PHASES.map((phase, i) => (
                 <Reveal key={phase.n} delay={0.1 + i * 0.08}>
                   <div className="h-full rounded-2xl border border-line-dark bg-white/[0.04] p-7 transition-colors hover:bg-white/[0.07]">
-                    <span className="font-display text-2xl font-bold text-brand-light">{phase.n}</span>
+                    <span className="font-display text-2xl font-bold text-brand-light text-glow">{phase.n}</span>
                     <h3 className="mt-4 font-display text-lg font-semibold">{phase.title}</h3>
                     <p className="mt-3 text-sm leading-relaxed text-white/65">{phase.body}</p>
                   </div>

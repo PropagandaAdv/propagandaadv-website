@@ -66,3 +66,54 @@ body {
   background-image: radial-gradient(rgba(0,0,0,0.08) 1px, transparent 1px);
   background-size: 22px 22px;
 }
+
+/* Soft glow on key accent text (brand-blue headline words, stat numbers on
+   dark sections) — one glow treatment reused everywhere instead of a
+   different effect per section. */
+.text-glow {
+  text-shadow: 0 0 28px rgba(35, 61, 255, 0.45);
+}
+
+/* Whisper-level drifting light particles, see components/ui/AmbientParticles.tsx */
+@keyframes drift-glow {
+  0% {
+    transform: translate3d(0, 6px, 0);
+    opacity: 0;
+  }
+  15% {
+    opacity: var(--particle-opacity, 0.5);
+  }
+  50% {
+    transform: translate3d(0, -14px, 0);
+    opacity: var(--particle-opacity, 0.5);
+  }
+  85% {
+    opacity: var(--particle-opacity, 0.5);
+  }
+  100% {
+    transform: translate3d(0, 6px, 0);
+    opacity: 0;
+  }
+}
+
+.ambient-particle {
+  position: absolute;
+  --particle-opacity: 0.55;
+  border-radius: 9999px;
+  background: #5568FF;
+  box-shadow: 0 0 6px 1px rgba(85, 104, 255, 0.6);
+  animation-name: drift-glow;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+.ambient-particle-white {
+  background: #ffffff;
+  box-shadow: 0 0 6px 1px rgba(255, 255, 255, 0.7);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ambient-particle {
+    display: none;
+  }
+}

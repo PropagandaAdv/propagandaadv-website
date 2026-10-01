@@ -9,6 +9,7 @@ import { Aggiornamenti } from "@/components/Aggiornamenti";
 import { Faq } from "@/components/Faq";
 import { Contatti } from "@/components/Contatti";
 import { Footer } from "@/components/Footer";
+import { SignatureBeam } from "@/components/ui/SignatureBeam";
 
 export default function Home() {
   return (
@@ -17,12 +18,19 @@ export default function Home() {
       <main>
         <Hero />
         <Progetti />
+        <SignatureBeam />
         <ChiSiamo />
+        <SignatureBeam />
         <Metodo />
+        <SignatureBeam />
         <Servizi />
+        <SignatureBeam />
         <Numeri />
+        <SignatureBeam />
         <Aggiornamenti />
+        <SignatureBeam />
         <Faq />
+        <SignatureBeam />
         <Contatti />
       </main>
       <Footer />

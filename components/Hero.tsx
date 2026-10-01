@@ -75,7 +75,7 @@ export function Hero() {
                 initial={reduceMotion ? undefined : { opacity: 0, y: 28 }}
                 animate={reduceMotion ? undefined : { opacity: 1, y: 0 }}
                 transition={{ duration: 0.75, delay: 0.15 + i * 0.12, ease: [0.16, 1, 0.3, 1] }}
-                className={`block ${i === 1 ? "text-brand-light" : ""}`}
+                className={`block ${i === 1 ? "text-brand-light text-glow" : ""}`}
               >
                 {line}
               </motion.span>
