@@ -7,19 +7,20 @@ import { IconArrowUpRight, IconChevronDown } from "@/components/icons";
 
 const VIDEO_SRC = "/generated/hero-loop.mp4";
 const POSTER_SRC = "/generated/hero-loop-poster.webp";
-const VIDEO_DURATION_FALLBACK = 7.04;
+const VIDEO_DURATION_FALLBACK = 10.08;
 
 const HEADLINE_LINES = ["Idee veloci.", "Decisioni chiare.", "Risultati misurabili."];
 
 // Progress ranges (0-1 across the scrub) where each headline line fades in,
-// timed to the video's own three beats: mani+prisma (idea), prisma+mappa+fasci
-// (diffusione), icone+skyline (risultati). Lines accumulate, none fade back out.
+// timed to the video's own three beats: wireframe del sito che prende forma
+// (idea), grafico che sale (decisioni), notifica di nuovo contatto (risultati).
+// Lines accumulate, none fade back out.
 const LINE_BANDS: [number, number][] = [
   [0, 0.06],
-  [0.33, 0.4],
-  [0.66, 0.73],
+  [0.28, 0.35],
+  [0.58, 0.65],
 ];
-const FINAL_RANGE: [number, number] = [0.78, 0.92];
+const FINAL_RANGE: [number, number] = [0.72, 0.88];
 
 const clamp = (v: number, min: number, max: number) => Math.min(max, Math.max(min, v));
 const smoothstep = (x: number, a: number, b: number) => {
