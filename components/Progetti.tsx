@@ -1,7 +1,6 @@
 import { Container } from "@/components/ui/Container";
 import { Reveal } from "@/components/ui/Reveal";
 import { ProjectCard } from "@/components/ProjectCard";
-import { ProjectsShowreel } from "@/components/ProjectsShowreel";
 import { FEATURED_PROJECTS, chunkIntoRows } from "@/lib/projects";
 import { IconArrowUpRight } from "@/components/icons";
 
@@ -9,10 +8,8 @@ export function Progetti() {
   const rows = chunkIntoRows(FEATURED_PROJECTS);
 
   return (
-    <section id="progetti" className="bg-paper-warm pb-24 pt-0 lg:pb-32">
-      <ProjectsShowreel />
-
-      <Container className="pt-16 lg:pt-20">
+    <section id="progetti" className="bg-paper-warm pb-24 pt-20 lg:pb-32 lg:pt-28">
+      <Container>
         <div className="flex flex-wrap items-end justify-between gap-6">
           <div className="max-w-xl">
             <Reveal>
