@@ -14,7 +14,7 @@ import { SignatureBeam } from "@/components/ui/SignatureBeam";
 export default function Home() {
   return (
     <>
-      <Header />
+      <Header variant="hero" />
       <main>
         <Hero />
         <Progetti />
