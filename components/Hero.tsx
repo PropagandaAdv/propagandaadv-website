@@ -37,6 +37,11 @@ const SCENES: Scene[] = [
   },
 ];
 
+const FRAME_COUNT = 144;
+const frameSrc = (i: number) => `/hero-frames/f${String(i + 1).padStart(3, "0")}.webp`;
+// Confini di scena lungo il percorso: coincidono con i due agganci tra le tre clip.
+const BOUNDS = [0, 0.34, 0.66, 1];
+
 const clamp = (x: number) => (x < 0 ? 0 : x > 1 ? 1 : x);
 const ramp = (x: number, a: number, b: number) => 1 - Math.pow(1 - clamp((x - a) / (b - a)), 3);
 
@@ -49,6 +54,7 @@ function put(el: HTMLElement | null, o: number, y: number) {
 export function Hero() {
   const heroRef = useRef<HTMLElement>(null);
   const hintRef = useRef<HTMLDivElement>(null);
+  const canvasRef = useRef<HTMLCanvasElement>(null);
   const dotsRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -67,31 +73,109 @@ export function Hero() {
 
     let ticking = false;
     let last = -1;
+    let target = 0;
+    let shown = 0;
+    let rafId: number | null = null;
+    let drawn = -1;
+
+    // --- fotogrammi: caricamento progressivo + disegno su canvas ---
+    const canvas = canvasRef.current;
+    const ctx = canvas ? canvas.getContext("2d") : null;
+    const frames: (HTMLImageElement | null)[] = new Array(FRAME_COUNT).fill(null);
+    let loadStarted = false;
+    let disposed = false;
+
+    const nearestLoaded = (i: number) => {
+      for (let d = 0; d < FRAME_COUNT; d++) {
+        const a = frames[i - d];
+        if (a) return { img: a, idx: i - d };
+        const b = frames[i + d];
+        if (b) return { img: b, idx: i + d };
+      }
+      return null;
+    };
+
+    const draw = (i: number) => {
+      if (!canvas || !ctx) return;
+      const hit = nearestLoaded(i);
+      if (!hit) return;
+      const w = canvas.clientWidth;
+      const h = canvas.clientHeight;
+      const dpr = Math.min(window.devicePixelRatio || 1, 2);
+      if (canvas.width !== Math.round(w * dpr) || canvas.height !== Math.round(h * dpr)) {
+        canvas.width = Math.round(w * dpr);
+        canvas.height = Math.round(h * dpr);
+        drawn = -1;
+      }
+      if (drawn === hit.idx) return;
+      drawn = hit.idx;
+      const img = hit.img;
+      const scale = Math.max(canvas.width / img.naturalWidth, canvas.height / img.naturalHeight);
+      const dw = img.naturalWidth * scale;
+      const dh = img.naturalHeight * scale;
+      ctx.drawImage(img, (canvas.width - dw) / 2, (canvas.height - dh) / 2, dw, dh);
+    };
+
+    const loadFrames = () => {
+      if (loadStarted) return;
+      loadStarted = true;
+      const order: number[] = [];
+      // prima i frame di riferimento (ogni 8), poi il resto: lo scrub funziona subito, poi si infittisce
+      for (let i = 0; i < FRAME_COUNT; i += 8) order.push(i);
+      for (let i = 0; i < FRAME_COUNT; i++) if (i % 8 !== 0) order.push(i);
+      let cursor = 0;
+      const next = () => {
+        if (disposed || cursor >= order.length) return;
+        const i = order[cursor++];
+        const img = new Image();
+        img.decoding = "async";
+        img.onload = () => {
+          frames[i] = img;
+          drawn = -1;
+          draw(Math.round(shown));
+          next();
+        };
+        img.onerror = next;
+        img.src = frameSrc(i);
+      };
+      for (let k = 0; k < 4; k++) next();
+    };
+
+    const tickLoop = () => {
+      rafId = null;
+      const diff = target - shown;
+      shown = Math.abs(diff) < 0.02 ? target : shown + diff * 0.14;
+      draw(Math.round(shown));
+      if (shown !== target) rafId = requestAnimationFrame(tickLoop);
+    };
+    const startLoop = () => {
+      if (rafId === null) rafId = requestAnimationFrame(tickLoop);
+    };
 
     const render = () => {
       ticking = false;
       const range = hero.offsetHeight - window.innerHeight;
       if (range <= 0) return;
       const rect = hero.getBoundingClientRect();
-      const p = clamp(-rect.top / range) * 3; // 0..3, una unita' per scena
-      if (Math.abs(p - last) < 0.0005) return;
-      last = p;
+      const raw = clamp(-rect.top / range); // 0..1 lungo tutto il percorso
+      target = raw * (FRAME_COUNT - 1);
+      startLoop();
+      const p = raw * 3 + 0; // usato solo per il rilevamento di cambio
+      if (Math.abs(raw - last) < 0.0003) return;
+      last = raw;
 
-      const cur = Math.min(2, Math.floor(p));
+      const cur = raw < BOUNDS[1] ? 0 : raw < BOUNDS[2] ? 1 : 2;
       dotsRef.current?.querySelectorAll("b").forEach((d, i) => d.classList.toggle("on", i === cur));
       if (hintRef.current) hintRef.current.style.opacity = String(0.7 * (1 - ramp(p, 0, 0.12)));
 
+      void p;
       parts.forEach((S, i) => {
-        const s = p - i;
+        const s = (raw - BOUNDS[i]) / (BOUNDS[i + 1] - BOUNDS[i]);
         const first = i === 0;
         const final = i === parts.length - 1;
         const vis = (first ? 1 : ramp(s, -0.14, 0.12)) * (final ? 1 : 1 - ramp(s, 0.88, 1.12));
-        const l = clamp(s);
 
-        if (S.bg) {
-          S.bg.style.opacity = vis.toFixed(3);
-          S.bg.style.transform = `translate3d(0,${((0.5 - l) * 60).toFixed(1)}px,0) scale(${(1.02 + l * 0.1).toFixed(4)})`;
-        }
+        if (S.bg) S.bg.style.opacity = vis.toFixed(3);
         S.el.style.zIndex = String(Math.round(vis * 10) + i);
         S.el.classList.toggle("is-active", vis > 0.5);
 
@@ -136,6 +220,7 @@ export function Hero() {
       window.removeEventListener("scroll", onScroll);
       window.removeEventListener("resize", onScroll);
       if (mq.matches) {
+        loadFrames();
         last = -1;
         render();
         window.addEventListener("scroll", onScroll, { passive: true });
@@ -148,6 +233,8 @@ export function Hero() {
     mq.addEventListener("change", setup);
     setup();
     return () => {
+      disposed = true;
+      if (rafId !== null) cancelAnimationFrame(rafId);
       mq.removeEventListener("change", setup);
       window.removeEventListener("scroll", onScroll);
       window.removeEventListener("resize", onScroll);
@@ -157,6 +244,7 @@ export function Hero() {
   return (
     <section ref={heroRef} className="hs" aria-label="Introduzione">
       <div className="hs-stage">
+        <canvas ref={canvasRef} className="hs-canvas" aria-hidden="true" />
         {SCENES.map((s, i) => {
           const H = i === 0 ? "h1" : "h2";
           return (

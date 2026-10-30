@@ -132,11 +132,11 @@ body {
   will-change: transform, opacity;
 }
 .hs-bg::after { content: ""; position: absolute; inset: 0; }
-.hs-s1 .hs-bg { background-image: linear-gradient(135deg, #3a2412, #12100d), url("https://images.unsplash.com/photo-1497032628192-86f99bcd76bc?auto=format&fit=crop&w=2000&q=70"); }
+.hs-s1 .hs-bg { background-image: url("/hero-frames/poster-1.webp"); }
 .hs-s1 .hs-bg::after { background: linear-gradient(90deg, rgba(20, 10, 2, .78), rgba(20, 10, 2, .42)); }
-.hs-s2 .hs-bg { background-image: linear-gradient(135deg, #0a1030, #05060a), url("https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=2000&q=70"); filter: brightness(.55) saturate(.7) hue-rotate(185deg); }
+.hs-s2 .hs-bg { background-image: url("/hero-frames/poster-2.webp"); }
 .hs-s2 .hs-bg::after { background: linear-gradient(180deg, rgba(5, 8, 40, .55), rgba(5, 6, 20, .72)); }
-.hs-s3 .hs-bg { background-image: linear-gradient(135deg, #0b1450, #05060a), url("https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?auto=format&fit=crop&w=2000&q=70"); }
+.hs-s3 .hs-bg { background-image: url("/hero-frames/poster-3.webp"); }
 .hs-s3 .hs-bg::after { background: linear-gradient(180deg, rgba(5, 8, 50, .66), rgba(5, 6, 20, .74)), linear-gradient(90deg, rgba(35, 61, 255, .22), transparent 60%); }
 
 .hs-copy {
@@ -166,7 +166,7 @@ body {
 .hs-btn:hover { background: #1A2ECC; transform: translateY(-2px); }
 .hs-link { font-weight: 500; border-bottom: 1px solid rgba(255, 255, 255, .6); padding-bottom: 3px; transition: border-color .2s; }
 .hs-link:hover { border-color: #fff; }
-.hs-hint, .hs-dots { display: none; }
+.hs-canvas, .hs-hint, .hs-dots { display: none; }
 @media (max-width: 767px) { .hs-btn { width: 100%; } }
 
 /* desktop con movimento: stage sticky pilotato dallo scroll */
@@ -175,7 +175,10 @@ body {
   .hs-stage { position: sticky; top: 0; height: 100vh; height: 100svh; overflow: hidden; }
   .hs-scene { position: absolute; inset: 0; min-height: 0; pointer-events: none; }
   .hs-scene.is-active { pointer-events: auto; }
-  .hs-bg { inset: -6%; }
+  .hs-stage { background: #05060A url("/hero-frames/poster-1.webp") center / cover no-repeat; }
+  .hs-canvas { position: absolute; inset: 0; width: 100%; height: 100%; display: block; }
+  /* i fotogrammi sono gia' lo sfondo: .hs-bg tiene solo lo scrim di scena */
+  .hs-bg { inset: 0; background-image: none !important; }
   .hs-copy { position: absolute; inset: 0; min-height: 0; padding: 110px 48px 80px; }
   .hs-h { font-size: clamp(2.25rem, 4.6vw, 4.5rem); }
   .hs-sub { font-size: clamp(1.1rem, 1.5vw, 1.4rem); }
