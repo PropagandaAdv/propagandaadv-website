@@ -24,7 +24,7 @@ const SCENES: Scene[] = [
     id: "s2",
     kicker: "02 · L'infrastruttura",
     title: "Dimentica i semplici “siti web”.",
-    sub: "Quello che realizzo è la filiale più strategica della tua azienda. Costruisco la tua vetrina su strada, aperta 24 ore su 24, 7 giorni su 7.",
+    sub: "Quello che realizziamo è la filiale più strategica della tua azienda. Costruiamo la tua vetrina su strada, aperta 24 ore su 24, 7 giorni su 7.",
     reveal: "Mentre tu riposi, le luci del tuo business rimangono accese. Ad accogliere, informare e vendere.",
     label: "Capannone industriale illuminato di notte",
   },
@@ -32,7 +32,7 @@ const SCENES: Scene[] = [
     id: "s3",
     kicker: "03 · La conquista",
     title: "Non si tratta di avere una bella grafica online.",
-    sub: "Si tratta di presidiare il tuo mercato. Faccio in modo che chi cerca il tuo lavoro su Google trovi una porta spalancata, non un cartello Chiuso.",
+    sub: "Si tratta di presidiare il tuo mercato. Facciamo in modo che chi cerca il tuo lavoro su Google trovi una porta spalancata, non un cartello Chiuso.",
     label: "Veduta aerea della città al tramonto",
   },
 ];
@@ -262,7 +262,7 @@ export function Hero() {
                     <a className="hs-btn" href="/#contatti">
                       Inizia ora <span aria-hidden="true">→</span>
                     </a>
-                    <a className="hs-link" href="/progetti">Guarda i miei lavori</a>
+                    <a className="hs-link" href="/progetti">Guarda i nostri lavori</a>
                   </div>
                 )}
               </div>
