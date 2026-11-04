@@ -1,0 +1,68 @@
+## 1440
+progetti | Progetti & Clienti | lineHeight:20px→24px h:20→24
+progetti | Sito vetrina | dy=-490 dx=-646
+progetti | E-commerce | dy=-489
+progetti | Sito vetrina | dy=-979 dx=-646
+progetti | Sito vetrina | dy=-1715
+progetti | Tutti i progetti | dy=+17 dx=+29 h:58→24
+chi-siamo | Chi siamo | lineHeight:20px→24px h:20→24
+metodo | Come lavoriamo | lineHeight:20px→24px h:20→24
+metodo | Creiamo un'anteprima grafica del progett | MISSING
+metodo | Scopri il metodo completo | dy=+17 dx=+29 h:58→24
+servizi | Servizi | lineHeight:20px→24px h:20→24
+numeri | Numeri | lineHeight:20px→24px h:20→24
+numeri | Dal 2020 | dy=+12 h:84→60
+numeri | +450 | MISSING
+numeri | 30 gg | MISSING
+47 differenze
+## 1024
+progetti | Progetti & Clienti | lineHeight:20px→24px h:20→24
+progetti | Sito vetrina | dy=-379 dx=-498
+progetti | E-commerce | dy=-378
+progetti | Sito vetrina | dy=-757 dx=-498
+progetti | Sito vetrina | dy=-1326
+progetti | Tutti i progetti | dy=+17 dx=+29 h:58→24
+chi-siamo | Chi siamo | lineHeight:20px→24px h:20→24
+metodo | Come lavoriamo | lineHeight:20px→24px h:20→24
+metodo | Creiamo un'anteprima grafica del progett | MISSING
+metodo | Scopri il metodo completo | dy=+17 dx=+29 h:58→24
+servizi | Servizi | lineHeight:20px→24px h:20→24
+numeri | Numeri | lineHeight:20px→24px h:20→24
+numeri | Dal 2020 | dy=+11 h:84→60
+numeri | +450 | MISSING
+numeri | 30 gg | MISSING
+41 differenze
+## 768
+progetti | Progetti & Clienti | lineHeight:20px→24px h:20→24
+progetti | Ristorazione | dy=+32
+progetti | Piccola Osteria Andes | dy=+32 h:64→32
+progetti | Sito vetrina | dy=-282 dx=-370
+progetti | Food & Beverage | dy=+32
+progetti | Mantua Gin Experience | dy=+32 h:64→32
+progetti | E-commerce | dy=-283
+progetti | Sito vetrina | dy=-565 dx=-370
+progetti | Sito vetrina | dy=-990
+progetti | Tutti i progetti | dy=+17 dx=+29 h:58→24
+chi-siamo | Chi siamo | lineHeight:20px→24px h:20→24
+metodo | Come lavoriamo | lineHeight:20px→24px h:20→24
+metodo | Creiamo un'anteprima grafica del progett | MISSING
+metodo | Scopri il metodo completo | dy=+17 dx=+29 h:58→24
+servizi | Servizi | lineHeight:20px→24px h:20→24
+51 differenze
+## 390
+progetti | Progetti & Clienti | lineHeight:20px→24px h:20→24
+progetti | Sito vetrina | dy=-553
+progetti | E-commerce | dy=-553
+progetti | Sito vetrina | dy=-1106
+progetti | Sito vetrina | dy=-1318
+progetti | Tutti i progetti | dy=+17 dx=+29 h:58→24
+chi-siamo | Chi siamo | lineHeight:20px→24px h:20→24
+metodo | Come lavoriamo | lineHeight:20px→24px h:20→24
+metodo | Creiamo un'anteprima grafica del progett | MISSING
+metodo | Scopri il metodo completo | dy=+17 dx=+29 h:58→24
+servizi | Servizi | lineHeight:20px→24px h:20→24
+numeri | Numeri | lineHeight:20px→24px h:20→24
+numeri | Dal 2020 | dy=+10 h:67→48
+numeri | + 0 | MISSING
+numeri | 30 gg | MISSING
+47 differenze
