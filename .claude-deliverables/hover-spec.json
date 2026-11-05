@@ -1,0 +1,45 @@
+{
+ "source": "https://gruppoirideacque.com/ (sezione 'Un unico partner per ogni fase del trattamento delle acque'), 1440px, sola lettura",
+ "card": {
+  "height": "470px (invariata in hover)",
+  "borderRadius": "20px",
+  "boxShadow": "rgba(9, 23, 31, 0.18) 0px 20px 50px -20px",
+  "hover": "nessun cambio di ombra/bordo/transform",
+  "transition": "background 0.3s, border 0.3s, box-shadow 0.3s, transform 0.4s"
+ },
+ "image": {
+  "height_normal": "290px",
+  "height_hover": "150px (-48,3%)",
+  "transition": "height 0.65s cubic-bezier(0.22, 0.61, 0.36, 1)",
+  "borderRadius": "20px 20px 0px 0px"
+ },
+ "body": {
+  "height_normal": "128px",
+  "height_hover": "194px",
+  "translateY_hover": "-140px (segue il ridursi dell'immagine, non e' un transform)"
+ },
+ "number": {
+  "color": "rgb(74,183,213)"
+ },
+ "title": {
+  "color": "rgb(9,23,31)"
+ },
+ "description": {
+  "max_height": [
+   "0px",
+   "170px"
+  ],
+  "opacity": [
+   0,
+   1
+  ],
+  "transform": [
+   "translateY(14px)",
+   "none"
+  ],
+  "transition": "max-height 0.65s cubic-bezier(0.22, 0.61, 0.36, 1), opacity 0.45s 0.12s, transform 0.65s cubic-bezier(0.22, 0.61, 0.36, 1)",
+  "color": "rgb(61,90,108)",
+  "highlight_color": "rgb(74,183,213) (#4AB7D5)",
+  "highlight_markup": "<span> dentro il <p>"
+ }
+}
