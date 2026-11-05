@@ -1,0 +1,152 @@
+[
+ {
+  "W": 1440,
+  "sw": 1440,
+  "cw": 1440,
+  "h1": 1,
+  "ids": [],
+  "hdrs": 1,
+  "ftrs": 1,
+  "title": "Metodo – Propaganda Adv",
+  "errs": 0,
+  "top": {
+   "cls": "pa-header pa-sec pa-light",
+   "h": 72,
+   "bg": "rgba(0, 0, 0, 0)",
+   "logo": "Logo-Completo.png",
+   "rat": {
+    "nav": 10.89,
+    "cta": 21,
+    "logo": 6.31
+   }
+  },
+  "scrolled": {
+   "cls": "pa-header pa-sec pa-light is-scrolled",
+   "h": 72,
+   "bg": "rgb(255, 255, 255)",
+   "logo": "Logo-Completo.png",
+   "rat": {
+    "nav": 11.2,
+    "cta": 21,
+    "logo": 6.6
+   }
+  }
+ },
+ {
+  "W": 1024,
+  "sw": 1024,
+  "cw": 1024,
+  "h1": 1,
+  "ids": [],
+  "hdrs": 1,
+  "ftrs": 1,
+  "title": "Metodo – Propaganda Adv",
+  "errs": 0,
+  "top": {
+   "cls": "pa-header pa-sec pa-light",
+   "h": 72,
+   "bg": "rgba(0, 0, 0, 0)",
+   "logo": "Logo-Completo.png",
+   "rat": {
+    "nav": 10.89,
+    "cta": 21,
+    "logo": 6.31
+   }
+  },
+  "scrolled": {
+   "cls": "pa-header pa-sec pa-light is-scrolled",
+   "h": 72,
+   "bg": "rgb(255, 255, 255)",
+   "logo": "Logo-Completo.png",
+   "rat": {
+    "nav": 11.2,
+    "cta": 21,
+    "logo": 6.6
+   }
+  }
+ },
+ {
+  "W": 768,
+  "sw": 768,
+  "cw": 768,
+  "h1": 1,
+  "ids": [],
+  "hdrs": 1,
+  "ftrs": 1,
+  "title": "Metodo – Propaganda Adv",
+  "errs": 0,
+  "top": {
+   "cls": "pa-header pa-sec pa-light",
+   "h": 72,
+   "bg": "rgba(0, 0, 0, 0)",
+   "logo": "Logo-Completo.png",
+   "rat": {
+    "logo": 6.31,
+    "toggle": 18.94
+   }
+  },
+  "scrolled": {
+   "cls": "pa-header pa-sec pa-light is-scrolled",
+   "h": 72,
+   "bg": "rgb(255, 255, 255)",
+   "logo": "Logo-Completo.png",
+   "rat": {
+    "logo": 6.6,
+    "toggle": 19.8
+   }
+  }
+ },
+ {
+  "W": 390,
+  "sw": 390,
+  "cw": 390,
+  "h1": 1,
+  "ids": [],
+  "hdrs": 1,
+  "ftrs": 1,
+  "title": "Metodo – Propaganda Adv",
+  "errs": 0,
+  "top": {
+   "cls": "pa-header pa-sec pa-light",
+   "h": 72,
+   "bg": "rgba(0, 0, 0, 0)",
+   "logo": "Logo-Completo.png",
+   "rat": {
+    "logo": 6.31,
+    "toggle": 18.94
+   }
+  },
+  "scrolled": {
+   "cls": "pa-header pa-sec pa-light is-scrolled",
+   "h": 72,
+   "bg": "rgb(255, 255, 255)",
+   "logo": "Logo-Completo.png",
+   "rat": {
+    "logo": 6.6,
+    "toggle": 19.8
+   }
+  }
+ },
+ {
+  "links": [
+   {
+    "t": "Richiedi una consulenza",
+    "href": "/#contatti",
+    "target": null,
+    "rel": null
+   }
+  ]
+ },
+ {
+  "ctaClick": "/#contatti",
+  "contattiTop": 128
+ },
+ {
+  "menuChiSiamo": "/metodo/"
+ },
+ {
+  "homeButtons": [
+   "Scopri il metodo completo -> /metodo/"
+  ]
+ }
+]
