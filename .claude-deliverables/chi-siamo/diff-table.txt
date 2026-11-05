@@ -1,0 +1,16 @@
+hero 1440: 0.00%  src 1440x491 stg 1440x491
+fondatore 1440: 0.01%  src 1440x782 stg 1440x782
+storia 1440: 0.03%  src 1440x1873 stg 1440x1873
+cta 1440: 0.04%  src 1440x607 stg 1440x607
+hero 1024: 0.00%  src 1024x431 stg 1024x431
+fondatore 1024: 0.02%  src 1024x802 stg 1024x802
+storia 1024: 0.05%  src 1024x1862 stg 1024x1862
+cta 1024: 0.07%  src 1024x570 stg 1024x570
+hero 768: 0.00%  src 768x370 stg 768x370
+fondatore 768: 0.03%  src 768x915 stg 768x915
+storia 768: 0.06%  src 768x1795 stg 768x1795
+cta 768: 0.12%  src 768x438 stg 768x438
+hero 390: 0.00%  src 390x463 stg 390x463
+fondatore 390: 0.04%  src 390x1324 stg 390x1324
+storia 390: 0.10%  src 390x2280 stg 390x2280
+cta 390: 0.18%  src 390x563 stg 390x563
