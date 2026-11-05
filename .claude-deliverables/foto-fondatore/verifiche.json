@@ -1,0 +1,404 @@
+{
+ "390": {
+  "sw": 390,
+  "cw": 390,
+  "panel": [
+   24,
+   1300,
+   342,
+   576
+  ],
+  "grid": [
+   24,
+   1300,
+   342,
+   512
+  ],
+  "cols": "165px 165px",
+  "card": [
+   24,
+   1106,
+   342,
+   162
+  ],
+  "cardBorder": "1px solid rgba(0, 0, 0, 0.1) 16px",
+  "imgBorder": "1px solid rgba(0, 0, 0, 0.1) 16px",
+  "imgs": [
+   {
+    "src": "giovanni-bertoni-pianoforte.webp",
+    "w": "1050",
+    "h": "1400",
+    "loading": null,
+    "alt": "Giovanni Bertoni in abito scuro accanto a un pianoforte",
+    "nat": [
+     390,
+     520
+    ],
+    "rect": [
+     25,
+     1633,
+     163,
+     178
+    ]
+   },
+   {
+    "src": "giovanni-bertoni-ritratto.webp",
+    "w": "853",
+    "h": "1280",
+    "loading": "lazy",
+    "alt": "Giovanni Bertoni, fondatore di Propaganda Adv",
+    "nat": [
+     390,
+     585
+    ],
+    "rect": [
+     25,
+     1301,
+     340,
+     318
+    ]
+   },
+   {
+    "src": "giovanni-bertoni-specchio.webp",
+    "w": "1050",
+    "h": "1400",
+    "loading": "lazy",
+    "alt": "Giovanni Bertoni, foto allo specchio",
+    "nat": [
+     390,
+     520
+    ],
+    "rect": [
+     202,
+     1633,
+     163,
+     178
+    ]
+   }
+  ],
+  "a": {
+   "href": "https://www.linkedin.com/in/giovanni-bertoni-238ba5144/",
+   "target": "_blank",
+   "rel": "noopener noreferrer",
+   "aria": "Profilo LinkedIn di Giovanni Bertoni (si apre in una nuova scheda)",
+   "rect": [
+    24,
+    1300,
+    342,
+    576
+   ]
+  },
+  "sec": [
+   0,
+   0,
+   390,
+   1932
+  ],
+  "errs": 0
+ },
+ "768": {
+  "sw": 768,
+  "cw": 768,
+  "panel": [
+   24,
+   866,
+   720,
+   364
+  ],
+  "grid": [
+   24,
+   866,
+   720,
+   300
+  ],
+  "cols": "232px 232px 232px",
+  "card": [
+   24,
+   672,
+   720,
+   162
+  ],
+  "cardBorder": "1px solid rgba(0, 0, 0, 0.1) 16px",
+  "imgBorder": "1px solid rgba(0, 0, 0, 0.1) 16px",
+  "imgs": [
+   {
+    "src": "giovanni-bertoni-pianoforte.webp",
+    "w": "1050",
+    "h": "1400",
+    "loading": null,
+    "alt": "Giovanni Bertoni in abito scuro accanto a un pianoforte",
+    "nat": [
+     768,
+     1024
+    ],
+    "rect": [
+     25,
+     867,
+     230,
+     298
+    ]
+   },
+   {
+    "src": "giovanni-bertoni-ritratto.webp",
+    "w": "853",
+    "h": "1280",
+    "loading": "lazy",
+    "alt": "Giovanni Bertoni, fondatore di Propaganda Adv",
+    "nat": [
+     768,
+     1152
+    ],
+    "rect": [
+     269,
+     867,
+     230,
+     298
+    ]
+   },
+   {
+    "src": "giovanni-bertoni-specchio.webp",
+    "w": "1050",
+    "h": "1400",
+    "loading": "lazy",
+    "alt": "Giovanni Bertoni, foto allo specchio",
+    "nat": [
+     768,
+     1024
+    ],
+    "rect": [
+     513,
+     867,
+     230,
+     298
+    ]
+   }
+  ],
+  "a": {
+   "href": "https://www.linkedin.com/in/giovanni-bertoni-238ba5144/",
+   "target": "_blank",
+   "rel": "noopener noreferrer",
+   "aria": "Profilo LinkedIn di Giovanni Bertoni (si apre in una nuova scheda)",
+   "rect": [
+    24,
+    866,
+    720,
+    364
+   ]
+  },
+  "sec": [
+   0,
+   0,
+   768,
+   1310
+  ],
+  "errs": 0
+ },
+ "1024": {
+  "sw": 1024,
+  "cw": 1024,
+  "panel": [
+   696,
+   322,
+   304,
+   364
+  ],
+  "grid": [
+   696,
+   322,
+   304,
+   300
+  ],
+  "cols": "93.3281px 93.3281px 93.3438px",
+  "card": [
+   696,
+   128,
+   304,
+   162
+  ],
+  "cardBorder": "1px solid rgba(0, 0, 0, 0.1) 16px",
+  "imgBorder": "1px solid rgba(0, 0, 0, 0.1) 16px",
+  "imgs": [
+   {
+    "src": "giovanni-bertoni-pianoforte.webp",
+    "w": "1050",
+    "h": "1400",
+    "loading": null,
+    "alt": "Giovanni Bertoni in abito scuro accanto a un pianoforte",
+    "nat": [
+     1024,
+     1365
+    ],
+    "rect": [
+     697,
+     323,
+     91,
+     298
+    ]
+   },
+   {
+    "src": "giovanni-bertoni-ritratto.webp",
+    "w": "853",
+    "h": "1280",
+    "loading": "lazy",
+    "alt": "Giovanni Bertoni, fondatore di Propaganda Adv",
+    "nat": [
+     853,
+     1280
+    ],
+    "rect": [
+     802,
+     323,
+     91,
+     298
+    ]
+   },
+   {
+    "src": "giovanni-bertoni-specchio.webp",
+    "w": "1050",
+    "h": "1400",
+    "loading": "lazy",
+    "alt": "Giovanni Bertoni, foto allo specchio",
+    "nat": [
+     1024,
+     1365
+    ],
+    "rect": [
+     908,
+     323,
+     91,
+     298
+    ]
+   }
+  ],
+  "a": {
+   "href": "https://www.linkedin.com/in/giovanni-bertoni-238ba5144/",
+   "target": "_blank",
+   "rel": "noopener noreferrer",
+   "aria": "Profilo LinkedIn di Giovanni Bertoni (si apre in una nuova scheda)",
+   "rect": [
+    696,
+    322,
+    304,
+    364
+   ]
+  },
+  "sec": [
+   0,
+   0,
+   1024,
+   801
+  ],
+  "errs": 0
+ },
+ "1440": {
+  "sw": 1440,
+  "cw": 1440,
+  "panel": [
+   953,
+   306,
+   403,
+   364
+  ],
+  "grid": [
+   953,
+   306,
+   403,
+   300
+  ],
+  "cols": "126.219px 126.219px 126.219px",
+  "card": [
+   953,
+   112,
+   403,
+   162
+  ],
+  "cardBorder": "1px solid rgba(0, 0, 0, 0.1) 16px",
+  "imgBorder": "1px solid rgba(0, 0, 0, 0.1) 16px",
+  "imgs": [
+   {
+    "src": "giovanni-bertoni-pianoforte.webp",
+    "w": "1050",
+    "h": "1400",
+    "loading": null,
+    "alt": "Giovanni Bertoni in abito scuro accanto a un pianoforte",
+    "nat": [
+     1050,
+     1400
+    ],
+    "rect": [
+     954,
+     307,
+     124,
+     298
+    ]
+   },
+   {
+    "src": "giovanni-bertoni-ritratto.webp",
+    "w": "853",
+    "h": "1280",
+    "loading": "lazy",
+    "alt": "Giovanni Bertoni, fondatore di Propaganda Adv",
+    "nat": [
+     853,
+     1280
+    ],
+    "rect": [
+     1093,
+     307,
+     124,
+     298
+    ]
+   },
+   {
+    "src": "giovanni-bertoni-specchio.webp",
+    "w": "1050",
+    "h": "1400",
+    "loading": "lazy",
+    "alt": "Giovanni Bertoni, foto allo specchio",
+    "nat": [
+     1050,
+     1400
+    ],
+    "rect": [
+     1231,
+     307,
+     124,
+     298
+    ]
+   }
+  ],
+  "a": {
+   "href": "https://www.linkedin.com/in/giovanni-bertoni-238ba5144/",
+   "target": "_blank",
+   "rel": "noopener noreferrer",
+   "aria": "Profilo LinkedIn di Giovanni Bertoni (si apre in una nuova scheda)",
+   "rect": [
+    953,
+    306,
+    403,
+    364
+   ]
+  },
+  "sec": [
+   0,
+   0,
+   1440,
+   782
+  ],
+  "errs": 0
+ },
+ "hover": {
+  "cols": "114.734px 149.172px 114.734px",
+  "scale": "matrix(1.04, 0, 0, 1.04, 0, 0)",
+  "ov": "0.12",
+  "arw": "matrix(1, 0, 0, 1, 4, 0)"
+ },
+ "focus": {
+  "active": true,
+  "outline": "solid 2px rgb(35, 61, 255) off 3px"
+ },
+ "click": {
+  "popup": "https://www.linkedin.com/in/giovanni-bertoni-238ba5144",
+  "sameTab": "https://staging.propagandaadv.com/chi-siamo/"
+ }
+}
