@@ -13,11 +13,11 @@
    "rat": {
     "nav_min": 14.44,
     "cta": 6.6,
-    "logo(Logo-400-x-400)": 16.86
+    "logo(Logo-400-x-400)": 16.74
    },
    "logoBg": [
     40,
-    26,
+    27,
     16
    ]
   },
@@ -26,7 +26,7 @@
     0,
     0,
     1440,
-    64
+    72
    ],
    "hbg": "rgb(255, 255, 255)",
    "cls": "pa-header pa-sec     is-scrolled",
@@ -73,7 +73,7 @@
     0,
     0,
     1024,
-    64
+    72
    ],
    "hbg": "rgb(255, 255, 255)",
    "cls": "pa-header pa-sec     is-scrolled",
@@ -119,7 +119,7 @@
     0,
     0,
     768,
-    64
+    72
    ],
    "hbg": "rgb(255, 255, 255)",
    "cls": "pa-header pa-sec     is-scrolled",
@@ -164,7 +164,7 @@
     0,
     0,
     390,
-    64
+    72
    ],
    "hbg": "rgb(255, 255, 255)",
    "cls": "pa-header pa-sec     is-scrolled",
@@ -190,7 +190,7 @@
     0,
     0,
     1440,
-    64
+    72
    ],
    "hbg": "rgb(255, 255, 255)",
    "cls": "pa-header pa-sec    pa-solid",
@@ -210,7 +210,7 @@
     0,
     0,
     1440,
-    64
+    72
    ],
    "hbg": "rgb(255, 255, 255)",
    "cls": "pa-header pa-sec    pa-solid  is-scrolled",
@@ -237,7 +237,7 @@
     0,
     0,
     1024,
-    64
+    72
    ],
    "hbg": "rgb(255, 255, 255)",
    "cls": "pa-header pa-sec    pa-solid",
@@ -257,7 +257,7 @@
     0,
     0,
     1024,
-    64
+    72
    ],
    "hbg": "rgb(255, 255, 255)",
    "cls": "pa-header pa-sec    pa-solid  is-scrolled",
@@ -284,7 +284,7 @@
     0,
     0,
     768,
-    64
+    72
    ],
    "hbg": "rgb(255, 255, 255)",
    "cls": "pa-header pa-sec    pa-solid",
@@ -303,7 +303,7 @@
     0,
     0,
     768,
-    64
+    72
    ],
    "hbg": "rgb(255, 255, 255)",
    "cls": "pa-header pa-sec    pa-solid  is-scrolled",
@@ -329,7 +329,7 @@
     0,
     0,
     390,
-    64
+    72
    ],
    "hbg": "rgb(255, 255, 255)",
    "cls": "pa-header pa-sec    pa-solid",
@@ -348,7 +348,7 @@
     0,
     0,
     390,
-    64
+    72
    ],
    "hbg": "rgb(255, 255, 255)",
    "cls": "pa-header pa-sec    pa-solid  is-scrolled",

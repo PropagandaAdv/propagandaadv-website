@@ -13,7 +13,8 @@
 
 ## Dopo (template #228)
 - Container padre `pa-header` -> logo (2 widget Immagine) | Nav Menu | CTA. Fixed, z-index 1000.
-- Trasparente 72px in cima; dopo 24px di scroll: bianco, ombra `0 2px 16px rgba(0,0,0,.06)`, altezza 64px, voci scure, logo scuro, CTA nera (hover blu brand).
+- Trasparente 72px in cima; oltre 40px di scroll (torna sotto 8px): bianco, ombra `0 2px 16px rgba(0,0,0,.06)`, voci scure, logo scuro, CTA nera (hover blu brand). Altezza costante 72px, nessuna transizione: il cambio e' istantaneo e sincrono (sfondo, ombra, colori e logo nello stesso frame).
+- Logo: due immagini (B chiara, C scura) nello stesso riquadro 147x27px, ritagliate sull'inchiostro: posizione e dimensione identiche al pixel nei due stati.
 - Misure replicate da Vercel: voci 15.2px/500 gap 32; CTA 14px/600 pill 10x20 (42px); hamburger 40px tondo; pannello a tutta larghezza.
 - Link: `/#progetti`, `/#chi-siamo`, ..., CTA `/#contatti` (la home e' la front page: `/home/` reindirizza a `/`).
 
