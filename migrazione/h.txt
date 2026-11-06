@@ -1,0 +1,23 @@
+HTTP/1.1 200 Connection Established
+
+HTTP/2 200 
+date: Fri, 06 Nov 2026 14:45:40 GMT
+server: Apache
+x-powered-by: PHP/8.4.27
+x-robots-tag: noindex
+x-content-type-options: nosniff
+access-control-expose-headers: X-WP-Total, X-WP-TotalPages, Link
+access-control-allow-headers: Authorization, X-WP-Nonce, Content-Disposition, Content-MD5, Content-Type
+x-wp-total: 162
+x-wp-totalpages: 2
+link: <https://www.propagandaadv.com/wp-json/wp/v2/posts?per_page=100&page=2&_embed=1>; rel="next"
+allow: GET
+cache-control: max-age=0
+expires: Fri, 06 Nov 2026 14:45:40 GMT
+content-type: application/json; charset=UTF-8
+vary: Origin,Accept-Encoding, x-is-ai-bot
+x-varnish: 3733957126
+age: 0
+via: 1.1 webcache2 (Varnish/trunk)
+accept-ranges: bytes
+
