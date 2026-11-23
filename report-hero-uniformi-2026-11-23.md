@@ -20,3 +20,10 @@ Undo 72 h (fino al 26/11/2026): vedi risposte dei tool.
 5 immagini astratte blu/nero 4:3 generate con Magnific (135 crediti ciascuna, ~675 totali; saldo iniziale 17.860):
 privacy (21098), proprietà dei dati (8950), Meta Ads Q4 (8685), copy Google Ads (8465), lead generation B2B e brand reputation (8817).
 Estensione a 163 articoli ≈ 22.000 crediti: oltre il saldo.
+
+## Blog: immagini in evidenza (23/11/2026)
+155 articoli puntavano a media inesistenti (il blog mostrava lo stesso segnaposto). Generate 155 immagini nuove (Nano Banana 2.1, 3:2, 1k, 50 crediti l'una) in 16 stili e con soggetti diversi, caricate come webp (≤180 KB) e impostate come immagine in evidenza. Controllo visivo e di somiglianza: nessun duplicato; 3 immagini troppo vicine ad altre rigenerate (6872, 2385, 9073).
+Crediti: circa 8.000 su 16.780. Restano le 8 immagini originali degli articoli che già ne avevano una valida.
+
+## Placeholder
+Rimossi i marcatori [DA VALIDARE]/[DA VERIFICARE] da schede progetto e pagina Servizi (note interne comprese). Restano solo nei campi interni pa_fonte.
